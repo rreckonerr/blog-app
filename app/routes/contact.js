@@ -7,12 +7,14 @@ export default Route.extend({
 		return this.store.createRecord('contact');
 	},
 
-	// sendMessage: task(function* (newContactMessage) {
-	// 	yield newContactMessage.save();
+	// responseMessage: false,
+
+	// sendMessage: task(function* () {
+	// 	yield this.get('model').save();
 	// 	this.controller.set('responseMessage', true);
 	// }),
 
-	
+
 
 
 

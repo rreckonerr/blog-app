@@ -1,0 +1,14 @@
+<h2>List</h2>
+
+{{#each model as |post|}}
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">{{post.title}}</h3>
+    </div>
+    <div class="panel-body">
+      <img src={{post.urlToImage}} class="img-rounded">
+      <p>Description: {{post.description}}</p>
+      <p>Date: {{post.publishedAt}}</p>
+    </div>
+  </div>
+{{/each}}
