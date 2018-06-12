@@ -1,3 +1,4 @@
+// import { task } from 'ember-concurrency';
 import Route from '@ember/routing/route';
 
 export default Route.extend({
@@ -5,6 +6,15 @@ export default Route.extend({
 	model() {
 		return this.store.createRecord('contact');
 	},
+
+	// sendMessage: task(function* (newContactMessage) {
+	// 	yield newContactMessage.save();
+	// 	this.controller.set('responseMessage', true);
+	// }),
+
+	
+
+
 
 	actions: {
 
